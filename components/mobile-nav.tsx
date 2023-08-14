@@ -5,10 +5,10 @@ import { cn } from '@/lib/utils'
 import { useLockBody } from '@/hooks/use-lock-body'
 import { Icons } from '@/components/icons'
 import { siteConfig } from '@/config/site'
-import type { NavItem } from '@/components/main-nav'
+import type { NavbarItem } from '@/config/navbar'
 
 interface MobileNavProps {
-  items: NavItem[]
+  items: NavbarItem[]
   children?: React.ReactNode
 }
 
