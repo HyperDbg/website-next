@@ -7,31 +7,7 @@ import { Icons } from '@/components/icons'
 import { MobileNav } from '@/components/mobile-nav'
 import { cn } from '@/lib/utils'
 import { siteConfig } from '@/config/site'
-
-export type NavItem = {
-  title: string
-  href: string
-  disabled?: boolean
-}
-
-const items: Array<NavItem> = [
-  {
-    title: 'Documentation',
-    href: '/',
-  },
-  {
-    title: 'Doxygen',
-    href: '/',
-  },
-  {
-    title: 'Hypervisor Tutorials',
-    href: '/',
-  },
-  {
-    title: 'Blog',
-    href: '/blog',
-  },
-]
+import { navbarItems } from '@/config/navbar'
 
 interface MainNavProps {
   children?: React.ReactNode
@@ -49,9 +25,9 @@ export function MainNav({ children }: MainNavProps) {
           {siteConfig.name}
         </span>
       </Link>
-      {items?.length ? (
+      {navbarItems?.length ? (
         <nav className="hidden gap-6 md:flex">
-          {items?.map((item, index) => (
+          {navbarItems?.map((item, index) => (
             <Link
               key={index}
               href={item.disabled ? '#' : item.href}
@@ -75,8 +51,8 @@ export function MainNav({ children }: MainNavProps) {
         {showMobileMenu ? <Icons.close /> : <Icons.logo />}
         <span className="font-bold">Menu</span>
       </button>
-      {showMobileMenu && items && (
-        <MobileNav items={items}>{children}</MobileNav>
+      {showMobileMenu && navbarItems && (
+        <MobileNav items={navbarItems}>{children}</MobileNav>
       )}
     </div>
   )
