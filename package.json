@@ -36,5 +36,6 @@
     "eslint-config-prettier": "^8.10.0",
     "prettier": "^3.0.1",
     "shadcn-ui": "^0.3.0"
-  }
+  },
+  "packageManager": "pnpm@8.6.12"
 }
