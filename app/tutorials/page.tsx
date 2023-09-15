@@ -59,8 +59,8 @@ const tutorials = {
 
 export default async function Tutorials() {
   return (
-    <div className="container flex py-6 lg:py-16">
-      <div className="flex w-1/3 flex-col gap-4 md:max-w-[58rem]">
+    <div className="container flex flex-col gap-x-0 lg:flex-row lg:gap-x-2 py-6 lg:py-16">
+      <div className="flex lg:w-1/3 flex-col gap-4 mb-12">
         <h1 className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
           Tutorials
         </h1>
@@ -69,9 +69,9 @@ export default async function Tutorials() {
         </p>
       </div>
 
-      <div className="w-2/3 space-y-12">
+      <div className="lg:w-2/3 space-y-12">
         <section id="courses">
-          <header className="flex items-center justify-between mb-6 ml-6">
+          <header className="flex items-center justify-between mb-6">
             <h2 className="font-heading text-2xl leading-[1.1] sm:text-3xl md:text-4xl">
               Courses
             </h2>
@@ -111,7 +111,7 @@ export default async function Tutorials() {
         </section>
 
         <section id="videos">
-          <header className="flex items-center justify-between mb-6 ml-6">
+          <header className="flex items-center justify-between mb-6">
             <h2 className="font-heading text-2xl leading-[1.1] sm:text-3xl md:text-4xl">
               Videos
             </h2>
