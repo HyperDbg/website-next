@@ -139,7 +139,7 @@ export default async function Tutorials() {
                   </div>
 
                   <Link
-                    href="/"
+                    href={video.link}
                     className={buttonVariants({ variant: 'outline' })}
                   >
                     Watch video
