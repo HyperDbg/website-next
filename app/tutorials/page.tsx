@@ -9,55 +9,9 @@ import {
   CardTitle,
 } from '@/components/ui/card'
 
-const tutorials = {
-  courses: [
-    {
-      title: 'Reversing with HyperDbg',
-      description:
-        'A comprehensive guide focused on teaching reverse engineering techniques using HyperDbg. This course is designed for individuals interested in analyzing, fuzzing, and reversing software using modern hardware technologies.',
-      author: 'Sina Karvandi',
-      community: false,
-      link: 'https://ost2.fyi/Dbg3301',
-    },
-    {
-      title: 'Hypervisor From Scratch',
-      description:
-        "If you're interested in understanding the internal design and architecture of hypervisors and HyperDbg, you can read the Hypervisor From Scratch course.",
-      author: 'Sina Karvandi',
-      community: false,
-      link: 'https://github.com/SinaKarvandi/Hypervisor-From-Scratch/',
-    },
-  ],
-  videos: [
-    {
-      title:
-        'A Practical Introduction to HyperDbg Debugger - Webinar (Persian)',
-      description:
-        'In this webinar, principles, design constraints, and first steps for using HyperDbg debugger and hypervisor-based reverse engineering are explained.',
-      author: 'Sina Karvandi',
-      community: false,
-      link: 'https://www.youtube.com/watch?v=EK5WwWb5WNA',
-    },
-    {
-      title: 'Hyperdbg installation and first steps - (Spanish)',
-      description:
-        'Step-by-step guide on installing and using HyperDbg debugger.',
-      author: 'Ricardo Narvaja',
-      community: true,
-      link: 'https://www.youtube.com/watch?v=BBp5kGL1qoI',
-    },
-    {
-      title: 'Hyperdbg instalation in two VM and new features - (Spanish)',
-      description:
-        'Installing HyperDbg on two virtual machines and explaining its new features.',
-      author: 'Ricardo Narvaja',
-      community: true,
-      link: 'https://www.youtube.com/watch?v=rmkEW5IVDyg&t',
-    },
-  ],
-} as const
-
 export default async function Tutorials() {
+  const tutorials = await import('@/content/tutorials.json')
+
   return (
     <div className="container flex flex-col gap-x-0 lg:flex-row lg:gap-x-2 py-6 lg:py-16">
       <div className="flex lg:w-1/3 flex-col gap-4 mb-12">
