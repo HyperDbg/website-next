@@ -25,14 +25,14 @@
     },
     {
       "title": "Hyperdbg installation and first steps - (Spanish)",
-      "description": "Step-by-step guide on installing and using HyperDbg debugger.",
+      "description": "This video will guide you through the configuration, installation and initial setup of Hyperdbg, as well as configuring symbol tables, viewing registers, and setting breakpoints.",
       "author": "Ricardo Narvaja",
       "community": true,
       "link": "https://www.youtube.com/watch?v=BBp5kGL1qoI"
     },
     {
       "title": "Hyperdbg instalation in two VM and new features - (Spanish)",
-      "description": "Installing HyperDbg on two virtual machines and explaining its new features.",
+      "description": "This video will guide you through unpacking a simple binary by bringing pages into the RAM and starting processes in the target virtual machine using the HyperDbg debugger.",
       "author": "Ricardo Narvaja",
       "community": true,
       "link": "https://www.youtube.com/watch?v=rmkEW5IVDyg&t"
