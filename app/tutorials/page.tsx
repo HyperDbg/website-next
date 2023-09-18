@@ -13,8 +13,8 @@ export default async function Tutorials() {
   const tutorials = await import('@/content/tutorials.json')
 
   return (
-    <div className="container flex flex-col gap-x-0 lg:flex-row lg:gap-x-2 py-6 lg:py-16">
-      <div className="flex lg:w-1/3 flex-col gap-4 mb-12">
+    <div className="container flex flex-col gap-x-0 py-6 lg:flex-row lg:gap-x-2 lg:py-16">
+      <div className="mb-12 flex flex-col gap-4 lg:w-1/3">
         <h1 className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
           Tutorials
         </h1>
@@ -23,9 +23,9 @@ export default async function Tutorials() {
         </p>
       </div>
 
-      <div className="lg:w-2/3 space-y-12">
+      <div className="space-y-12 lg:w-2/3">
         <section id="courses">
-          <header className="flex items-center justify-between mb-6">
+          <header className="mb-6 flex items-center justify-between">
             <h2 className="font-heading text-2xl leading-[1.1] sm:text-3xl md:text-4xl">
               Courses
             </h2>
@@ -46,7 +46,7 @@ export default async function Tutorials() {
                   {course.description}
                 </CardContent>
 
-                <CardFooter className="w-full flex justify-between">
+                <CardFooter className="flex w-full justify-between">
                   <div className="flex items-center justify-start gap-1">
                     <span className="text-muted-foreground">By</span>{' '}
                     {course.author}
@@ -65,7 +65,7 @@ export default async function Tutorials() {
         </section>
 
         <section id="videos">
-          <header className="flex items-center justify-between mb-6">
+          <header className="mb-6 flex items-center justify-between">
             <h2 className="font-heading text-2xl leading-[1.1] sm:text-3xl md:text-4xl">
               Videos
             </h2>
@@ -86,7 +86,7 @@ export default async function Tutorials() {
                   {video.description}
                 </CardContent>
 
-                <CardFooter className="w-full flex justify-between">
+                <CardFooter className="flex w-full justify-between">
                   <div className="flex items-center justify-start gap-1">
                     <span className="text-muted-foreground">By</span>{' '}
                     {video.author}
