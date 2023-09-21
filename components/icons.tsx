@@ -17,6 +17,7 @@ import {
   MoreVertical,
   Pizza,
   Plus,
+  Quote,
   Settings,
   SunMedium,
   Trash,
@@ -30,6 +31,7 @@ export type Icon = LucideIcon
 
 export const Icons = {
   logo: Cat,
+  citation: Quote,
   close: X,
   spinner: Loader2,
   chevronLeft: ChevronLeft,

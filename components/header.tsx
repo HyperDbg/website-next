@@ -2,6 +2,7 @@ import { MainNav } from '@/components/main-nav'
 import Link from 'next/link'
 import { cn } from '@/lib/utils'
 import { buttonVariants } from '@/components/ui/button'
+import { Icons } from './icons'
 
 export function Header() {
   return (
@@ -10,13 +11,13 @@ export function Header() {
         <MainNav />
         <nav>
           <Link
-            href="/"
+            href="/cite-paper"
             className={cn(
               buttonVariants({ variant: 'secondary', size: 'sm' }),
               'px-4',
             )}
           >
-            Cite Paper
+            <Icons.citation className="mr-2 h-4 w-4" /> Cite Paper
           </Link>
         </nav>
       </div>
