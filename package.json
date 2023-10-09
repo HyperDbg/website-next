@@ -35,8 +35,8 @@
   "devDependencies": {
     "eslint-config-prettier": "^9.0.0",
     "prettier": "^3.0.3",
-    "prettier-plugin-tailwindcss": "^0.5.4",
-    "shadcn-ui": "^0.4.0"
+    "prettier-plugin-tailwindcss": "^0.5.5",
+    "shadcn-ui": "^0.4.1"
   },
   "packageManager": "pnpm@8.7.6"
 }
